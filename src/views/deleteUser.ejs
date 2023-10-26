@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete a user</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    
+    <div class="topnav">
+        <a  href="/">Trang chủ</a>
+        <a  href="/create">Cập nhật tài khoản</a>
+    </div >
+    <div class="form-add-new">
+        <form action="/delete-user" method="post">
+            <fieldset><legend style="font-size: 20;">Delete user</legend>
+            <div class="input-group d-none">
+                <label>id</label>
+                <input type="number" id="id" name="id" value="<%=useredit.id %>"
+                />
+            </div>
+            <div class="input-group">
+                <label>are you sure to delete user with username</label>
+                <input type="text" id="username" name="username" value="<%=useredit.username %>"/>
+            </div>
+            <!-- <div class="input-group">
+                <label>password</label>
+                <input type="text" id="password" name="password" value="<%=useredit.password %>"/>
+            </div> -->
+            <div class="input-group">
+                <label>email</label>
+                <input type="text" id="email" name="email" value="<%=useredit.email %>"/>
+            </div>
+            <div class="input-group">
+                <label>displayname</label>
+                <input type="text" id="displayname" name="displayname" value="<%=useredit.displayname %>"/>
+            </div>
+            <div class="">
+                <button>confirm</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail sp</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body><html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <style>
+        .table-container{
+            padding: 15px 20px;
+        }
+        .title{
+            font-size: 25px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td{
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover{
+            background-color: coral;
+        }
+    </style>
+    <body>
+        <div class="topnav">
+            <a  href="/">Trang chủ</a>
+            <a href="/create">Tạo tài khoản</a>
+            <a class="active" href="#">Chi tiết sp</a>
+            <a href="#about">Liên hệ</a>
+        </div >
+    
+        <div class="table-container">
+            <div class="title">Detail product</div>
+            <table class="w3-table-all w3-hoverable">
+                <thead>
+                <tr class="w3-light-grey">
+                    <th>SanPham</th>
+                    <th>XuatXu</th>
+                    <th>GioiTinh</th>
+                    <th>LoaiKinh</th>
+                    <th>Pin</th>
+                    <th>1</th>
+                    <!-- <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th> -->
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                </tr>
+                </thead>
+                    <tr>
+                        <td><%= productdt.SoHieuSanPham %></td>
+                        <td><%= productdt.XuatXu %></td>
+                        <td><%= productdt.GioiTinh %></td>
+                        <td><%= productdt.LoaiKinh %></td>
+                        <td><%= productdt.Pin %></td>
+                        <td><%= productdt.BaoHanh %></td>
+                        <!-- <td><%= productdt.DuongKinhMatSo %></td>
+                        <td><%= productdt.BeDayMatSo %></td>
+                        <td><%= productdt.DayDeo %></td>
+                        <td><%= productdt.ChongNuoc %></td> -->
+                        <td><%= productdt.ChucNang %></td>
+                        <td>
+                            <img src="<%= productdt.Anhsp %>" alt="Product Image" width="100" height="100">
+                        </td>
+                        <td><%= productdt.Giasp %></td>
+                        <td><%= productdt.NoiSanXuat %></td>
+                        <td><%= productdt.TenThuongHieu %></td>
+                       
+                    </tr>            
+            </table>
+        </div>
+    </body>
+    </html>
+     <div class="form-add-new">
+        <form action="#" method="">
+            <!--<div class="input-group d-none">
+                <label>id</label>
+                <input type="number" id="id" name="id" value="<%=productdt.id %>"
+                />
+            </div>
+            <div class="input-group">
+                <label>tensp</label>
+                <input type="text" id="tensp" name="tensp" value="<%=productdt.tensp %>"/>
+            </div>
+            <div class="input-group">
+                <label>loaisp</label>
+                <input type="text" id="loaisp" name="loaisp" value="<%=productdt.loaisp %>"/>
+            </div>
+            <div class="input-group">
+                <label>gia</label>
+                <input type="text" id="gia" name="gia" value="<%=productdt.gia %>"/>
+            </div>
+            <div class="input-group">
+                <label>motasp</label>
+                <input type="text" id="motasp" name="motasp" value="<%=productdt.motasp %>"/>
+            </div>
+            <div class="input-group">
+                <label>anh sp</label>
+                <input type="text" id="anhsp" name="anhsp" value="<%=productdt.anhsp %>"/>
+            </div> -->
+            
+            <div class="">
+                <button>add bag</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

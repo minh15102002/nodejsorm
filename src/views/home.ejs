@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<style>
+    
+</style>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Trang chủ</a>
+        <a href="/register">Đăng ký</a>
+        <a href="/login">Đăng nhập</a>
+        <!-- <a href="#contact">Đăng nhập</a> -->
+        <a href="#a">Liên hệ</a>
+    </div >
+
+    <div class="table-container">
+        <div class="title">List product</div>
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+            <tr class="w3-light-grey">
+                <th>id</th>
+                <th>SoHieuSanPham</th>
+                <th>XuatXu</th>
+                <th>GioiTinh</th>
+                <th>LoaiKinh</th>
+                <th>Pin</th>
+                <th>BaoHanh</th>
+                <th>DuongKinhMatSo</th>
+                <th>BeDayMatSo</th>
+                <th>DayDeo</th>
+                <th>ChongNuoc</th>
+                <th>ChucNang</th>
+                <th>Anhsp</th>
+                <th>Giasp</th>
+                <th>NoiSanXuat</th>
+                <th>ThuongHieu</th>
+                <th>Action</th>
+                
+                
+            </tr>
+            </thead>
+            <% listproducts.forEach(function(product) { %>
+                <tr>
+                    <td><%= product.id %></td>
+                    <td><%= product.SoHieuSanPham %></td>
+                    <td><%= product.XuatXu %></td>
+                    <td><%= product.GioiTinh %></td>
+                    <td><%= product.LoaiKinh %></td>
+                    <td><%= product.Pin %></td>
+                    <td><%= product.BaoHanh %></td>
+                    <td><%= product.DuongKinhMatSo %></td>
+                    <td><%= product.BeDayMatSo %></td>
+                    <td><%= product.DayDeo %></td>
+                    <td><%= product.ChongNuoc %></td>
+                    <td><%= product.ChucNang %></td>
+                    <td>
+                        <img src="<%= product.Anhsp %>" alt="Product Image" width="100" height="100">
+                    </td>
+                    <td><%= product.Giasp %></td>
+                    <td><%= product.NoiSanXuat %></td>
+                    <td><%= product.TenThuongHieu %></td>
+                    <td>
+                        <div style="height: 50px;width: 50px;border: 1px solid #36d766;background-color: aquamarine;display: flex;
+                            justify-content: center;
+                            align-items: center; ">     
+                            <a href="/detailsp/<%= product.id %>">details</a>
+                        </div>
+                    </td>
+                </tr>             
+            <% }); %> 
+        </table>
+    </div>
+</body>
+</html>

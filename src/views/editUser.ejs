@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update a user</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    
+    <div class="topnav">
+        <a  href="/">Tran chủ</a>
+        <a  href="/create">Cập nhật tài khoản</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div >
+    <!-- <%= JSON.stringify(useredit)%> -->
+    <div class="form-upd-new">
+        <form action="/update-user" method="post">
+            <fieldset><legend style="font-size: 20;">update user</legend>
+            <div class="input-group d-none">
+                <label>id</label>
+                <input type="number" id="id" name="id" value="<%=useredit.id %>"
+                />
+            </div>
+            <div class="input-group">
+                <label>username</label>
+                <input type="text" id="username" name="username" value="<%=useredit.username %>"/>
+            </div>
+            <div class="input-group d-none">
+                <label>password</label>
+                <input type="text" id="password" name="password" value="<%=useredit.password %>"/>
+            </div>
+            <div class="input-group">
+                <label>email</label>
+                <input type="text" id="email" name="email" value="<%=useredit.email %>"/>
+            </div>
+            <div class="input-group">
+                <label>fistname</label>
+                <input type="text" id="fistname" name="fistname" value="<%=useredit.fistname %>"/>
+            </div>
+            <div class="input-group">
+                <label>lastname</label>
+                <input type="text" id="lastname" name="lastname" value="<%=useredit.lastname %>"/>
+            </div>
+            <div class="input-group d-none">
+                <label>RoleId</label>
+                <input type="text" id="RoleId" name="RoleId" value="<%=useredit.RoleId %>"/>
+            </div>
+            <div class="">
+                <button>edit</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
